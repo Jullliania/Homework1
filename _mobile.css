@@ -3,6 +3,10 @@
     width: 375px;
     height: 735px;
   }
+  .center {
+    padding-left: calc(50% - 375px);
+    padding-right: calc(50% - 375px);
+  }
   .top__text {
     display: flex;
     width: 343px;
@@ -46,19 +50,15 @@
   .game-first {
     width: 343px;
     height: 300px;
-    padding-right: 16px;
-    padding-left: 16px;
+    display: flex;
+    width: 343px;
   }
   .game-second {
     width: 343px;
     height: 300px;
-    padding-right: 16px;
-    padding-left: 16px;
   }
   .game-third {
     width: 343px;
     height: 300px;
-    padding-right: 16px;
-    padding-left: 16px;
   }
 }/*# sourceMappingURL=_mobile.css.map */

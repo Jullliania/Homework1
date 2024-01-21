@@ -3,6 +3,10 @@
         width: 375px;
         height: 735px;
     }
+    .center {
+        padding-left: calc(50% - 375px);
+        padding-right: calc(50% - 375px);
+    }
 
     .top__text {
         display: flex;
@@ -46,24 +50,29 @@
     .game-box {
         width: 375px;
         height: 1221px;
+        row-gap: 0px;
+        align-content: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .game {
+        padding-left: 16px;
+        padding-bottom: 32px;
     }
     .game-first {
         width: 343px;
         height: 300px;
-        padding-right: 16px;
-        padding-left: 16px;
+        
     }
     .game-second {
         width: 343px;
         height: 300px;
-        padding-right: 16px;
-        padding-left: 16px;
+        
     }
 
     .game-third {
         width: 343px;
         height: 300px;
-        padding-right: 16px;
-        padding-left: 16px;
+       
     }
 }
