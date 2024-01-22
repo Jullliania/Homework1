@@ -6,8 +6,7 @@
 body {
     overflow-x: hidden;
 
-    font-family:
-        'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .center {
@@ -26,7 +25,7 @@ body {
 
 .top__text {
     font-family: Montserrat;
-    color: #FFF;
+    color: #fff;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -42,7 +41,7 @@ body {
 }
 
 .text-header {
-    color: #FFF;
+    color: #fff;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -54,7 +53,7 @@ body {
 }
 
 .text-header-word {
-    color: #FFF;
+    color: #fff;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -63,25 +62,32 @@ body {
 }
 
 .button-header {
-    color: #FFF;
+    color: #fff;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     border-radius: 30px;
-    background: #9C0332;
+    background: #9c0332;
     width: 234px;
     height: 48px;
+
+    &:hover {
+        width: 234.063px;
+        height: 48.603px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #eb443f;
+    }
 }
 
 .game-box {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 32px;
+    column-gap: 31px;
     row-gap: 39px;
-
 
     flex-shrink: 0;
     background: #000915;
@@ -94,29 +100,51 @@ body {
 .game-first {
     background-image: url(img/game1.jpg);
     border-radius: 16px;
-    width: 379px;
+    width: 377px;
     height: 300px;
     flex-shrink: 0;
+
+    &:hover {
+        width: 378px;
+        height: 300px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        border: 3px solid #44d2ff;
+    }
 }
 
 .game-second {
     background-image: url(img/game2.jpg);
-    width: 378px;
+    width: 377px;
     height: 300px;
     flex-shrink: 0;
     border-radius: 16px;
+    &:hover {
+        width: 378px;
+        height: 300px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        border: 3px solid #44d2ff;
+    }
 }
 
 .game-third {
     background-image: url(img/game3.jpg);
-    width: 378px;
+    width: 377px;
     height: 300px;
     flex-shrink: 0;
     border-radius: 16px;
+    &:hover {
+        width: 378px;
+        height: 300px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        border: 3px solid #44d2ff;
+    }
 }
 
 .game-text {
-    color: #FFF;
+    color: #fff;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -132,4 +160,5 @@ body {
     padding-left: 32px;
 }
 
-@import'mobile';
+@import "mobile";
+
