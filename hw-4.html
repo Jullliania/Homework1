@@ -32,7 +32,7 @@
             'Коля': '200',
             'Вася': '300',
             'Петя': '400'
-        }; 
+        };
 
         for (let salary in employees) {
             console.log(`${salary} - зарплата ${employees[salary]} долларов`);
@@ -47,6 +47,14 @@
         console.log(n);
         console.log(num);
 
+        // задание 6
+
+        let firstFriday = new Date(3).getDay();
+
+        while (firstFriday <= 7) {
+            console.log (`Сегодня пятница, ${ firstFriday } - е число. Необходимо подготовить отчет`);
+            firstFriday++;
+        }
     </script>
 </body>
 
