@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // задание 1
+        let i = 0;
+        while (i < 2) {
+            console.log("Привет");
+            i++;
+        }
+        // задание 2
+        let a = 1;
+        while (a <= 5) {
+            console.log(a);
+            a++;
+        }
+        // задание 3
+        let b = 7;
+        while (b <= 22) {
+            console.log(b);
+            b++;
+        }
+        // задание 4
+        const employees = {
+            'Коля': '200',
+            'Вася': '300',
+            'Петя': '400'
+        };
+
+        for (let salary in employees) {
+            console.log(`${salary} - зарплата ${employees[salary]} долларов`);
+        }
+        // задание 5 
+        let n = 1000;
+        let num = 0;
+        while (n >= 50) {
+            n = n / 2;
+            num++;
+        }
+        console.log(n);
+        console.log(num);
+
+    </script>
+</body>
+
+</html>
