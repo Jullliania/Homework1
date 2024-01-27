@@ -49,11 +49,42 @@
 
         // задание 6
 
-        let firstFriday = new Date(3).getDay();
+        let firstFriday = 5;
 
-        while (firstFriday <= 7) {
-            console.log (`Сегодня пятница, ${ firstFriday } - е число. Необходимо подготовить отчет`);
-            firstFriday++;
+        while (firstFriday <= 31) {
+            console.log(`Сегодня пятница, ${firstFriday} - е число. Необходимо подготовить отчет`);
+            firstFriday += 7;
+        }
+
+        // задани 6.2
+        const value = (() => {
+            const date = new Date
+            const year = date.getFullYear()
+            const month = date.getMonth()
+
+            return {
+                day: 0,
+                month: month,
+                year: year,
+                date: date,
+                dayOfWeek: 0,
+                lastDay: new Date(year, month + 1, 0).getDate(),
+            }
+        })()
+
+        do {
+            ++value.day
+            value.date = new Date(value.year, value.month, value.day)
+            value.dayOfWeek = value.date.getDay()
+        }
+        while (value.dayOfWeek !== 5)
+
+        while (value.day <= value.lastDay) {
+            console.log(value.date.toLocaleDateString())
+            console.log(`Сегодня ${value.day}-е число. Это пятница - садись делать отчет`)
+
+            value.day += 7
+            value.date = new Date(value.year, value.month, value.day)
         }
     </script>
 </body>
