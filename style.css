@@ -17,7 +17,7 @@ body {
 
 .top {
     background-image: url(img/Background_top.jpg);
-    
+
     height: 1024px;
     background-repeat: no-repeat;
     background-position: center;
@@ -49,7 +49,7 @@ body {
     font-weight: 300;
     line-height: 32px;
     width: 481px;
-   
+
     padding-bottom: 44px;
 }
 
@@ -75,9 +75,7 @@ body {
     height: 48px;
 }
 
-.button {
-   
-}
+.button {}
 
 .game-box {
     display: flex;
@@ -86,7 +84,7 @@ body {
     column-gap: 32px;
     row-gap: 39px;
 
-   
+
     flex-shrink: 0;
     background: #000915;
     background-size: cover;
