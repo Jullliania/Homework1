@@ -159,6 +159,62 @@ body {
     padding-bottom: 32px;
     padding-left: 32px;
 }
+.seasons {
+    flex-shrink: 0;
+    background: #000915;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    height: 800px;
+   
+}
+.seasons-top {
+    padding-top: 243px;
+    padding-bottom: 243px;
+}
+.seasons__text {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+.text__seasons {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    width: 584px;
+    height: 64px;
+    padding-bottom: 32px;
+}
 
+.text-seasons-word {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+.image {
+}
+
+.Image__game {
+    width: 485px;
+    height: 333px;
+    flex-shrink: 0;
+    padding-left: 839px;
+    padding-right: 116px;
+}
 @import "mobile";
+
 

@@ -1,6 +1,5 @@
 @media (max-width: 767px) {
   .top {
-    width: 375px;
     height: 735px;
   }
   .center {
@@ -44,14 +43,19 @@
     padding-right: 68px;
   }
   .game-box {
-    width: 375px;
     height: 1221px;
+    row-gap: 0px;
+    align-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .game {
+    padding-left: 16px;
+    padding-bottom: 32px;
   }
   .game-first {
     width: 343px;
     height: 300px;
-    display: flex;
-    width: 343px;
   }
   .game-second {
     width: 343px;
@@ -60,5 +64,37 @@
   .game-third {
     width: 343px;
     height: 300px;
+  }
+  .seasons {
+    width: 375px;
+    height: 653.61px;
+  }
+  .seasons__text {
+    text-align: center;
+    font-size: 32px;
+    padding-top: none;
+    padding-bottom: none;
+  }
+  .text__seasons {
+    width: 343px;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .Image__game {
+    width: 344px;
+    height: 236px;
+    padding-left: 15px;
+    padding-right: 16px;
   }
 }/*# sourceMappingURL=_mobile.css.map */
