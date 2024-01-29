@@ -205,8 +205,6 @@ body {
   width: 485px;
   height: 333px;
   flex-shrink: 0;
-  padding-left: 839px;
-  padding-right: 116px;
 }
 
 @media (max-width: 767px) {
