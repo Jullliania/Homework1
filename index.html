@@ -47,7 +47,7 @@
             <p class="text__seasons">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
                 времени года он относится </p>
             <div class="button">
-                <button class="button-header">Играть!</button>
+                <button class="button-header" onclick="console.log(season());">Играть!</button>
             </div>
         </div>
         <div class="seasons-top">
@@ -281,6 +281,56 @@
         </div>
 
     </div>
+
+
+    <script>
+        function season() {
+            let month = (prompt('Введите номер месяца'));
+
+            switch (month) {
+                case '1':
+                    console.log('Зима');
+                    break;
+                case '2':
+                    console.log('Зима');
+                    break;
+                case '3':
+                    console.log('Весна');
+                    break;
+                case '4':
+                    console.log('Весна');
+                    break;
+                case '5':
+                    console.log('Весна');
+                    break;
+                case '6':
+                    console.log('Лето');
+                    break;
+                case '7':
+                    console.log('Лето');
+                    break;
+                case '8':
+                    console.log('Лето');
+                    break;
+                case '9':
+                    console.log('Осень');
+                    break;
+                case '10':
+                    console.log('Осень');
+                    break;
+                case '11':
+                    console.log('Осень');
+                    break;
+                case '12':
+                    console.log('Зима');
+                    break;
+                default:
+                    console.log('Условие не выполняется')
+                    break;
+            }
+        }
+
+    </script>
 </body>
 
 </html>
