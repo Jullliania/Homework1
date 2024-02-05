@@ -38,10 +38,17 @@
         console.log(numbers);
 
         // задание 4
+        const t = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+        const arr = []
+        for (let i = 0; i < 3; i++) {
+            arr[i] = [];
+            for (let j = 0; j <3; j++) {
+                arr [i][j]=1;
+            }
+        }
 
-
-        // задание 5
-        let figure = [1, 1, 1];
+            // задание 5
+            let figure = [1, 1, 1];
         figure.push(2, 2, 2);
         console.log(figure);
 
@@ -51,46 +58,46 @@
         console.log(numeral);
 
         // задание 7
-        let arr = [9, 8, 7, 6, 5];
-        let userInput = prompt("напиши число от 0 до 10");
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] === userInput) {
-                alert("Угадал");
-            }
-            else {
-                alert("Не угадал");
-            }
-        }
+        let userInput = Number(prompt("Угадай число"));
+        const arrY = [9, 8, 7, 6, 5];
+        arrY.includes(userInput) ? alert("Угадал!") : alert("Не угадал!");
 
         // задание 8
-        function reverseString(str) {
-            return str.split('').reverse().join('');
-        }
-
         const input = 'abcdef';
-        console.log(reverseString(input));
+        console.log(input.split('').reverse().join(''));
 
         // заадние 9 
-        let num = [
+        const num = [
             [1, 2, 3],
             [4, 5, 6]
         ];
-        for (let numIn of num)  { 
-            for (let el of numIn) {
-                console.log(numIn);
-            }
-        }
-    
+        const resultNum = [];
+        for (let el of num) resultNum.push(...el);
+        console.log(resultNum);
+
+        // задание 10
+        const array = [3, 1, 2, 7, 9, 10, 3, 6, 8, 1, 9, 3, 6, 7, 2, 3, 2, 6];
+        for (let index = 0; index < array.length - 1; index++)
+            console.log(array[index] + array[index + 1]);
+
 
         // задание 11
         const square = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         let result = square.map(item => (item ** 2));
         console.log(result);
 
+        // задание 12
+        const words = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+
+        function getLengthWords(words) {
+            return words.map(el => el.length)
+        }
+        console.log(getLengthWords(words));
+
         // задание 13
         function filterPositive(array) {
             const negative = [-1, 0, 5, -10, 56];
-            const result = negative.filter(item => (item <= 0));
+            return negative.filter(item => (item < 0));
         }
         console.log(filterPositive());
 
