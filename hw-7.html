@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // задание 1
+        function toUpperCase(str) {
+            return str.toUpperCase();
+        }
+
+        const input = 'js';
+        console.log(toUpperCase(input));
+
+        // задание 2
+        const animal = (['Кошка', 'Кит', 'Комар', 'Носорог']);
+        const search = 'ко';
+
+        animal.forEach((animal) => {
+            if (animal.toLowerCase().startsWith(search.toLowerCase())) {
+                console.log(animal);
+            }
+        });
+
+        // задание 3
+        const num_1 = Math.floor(32.58884);
+        console.log(num_1);
+
+        const num_2 = Math.ceil(32.58884);
+        console.log(num_2);
+
+        const num_3 = Math.round(32.58884);
+        console.log(num_3);
+
+        // задание 4
+
+        const numbers = [52, 53, 49, 77, 21, 32];
+
+        let min = numbers[0];
+        let max = numbers[0];
+
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] < min) {
+                min = numbers[i];
+            }
+
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+
+        console.log("Минимальное число: ", min);
+        console.log("Максимальное число: ", max);
+
+        // задание 5 
+        function getRandomInt(minValue, maxValue) {
+            return Math.round(Math.random() * maxValue);
+        }
+        console.log(getRandomInt(0, 10));
+
+        // задание 6
+        function getRandomNumbers(num) {
+            let arr = [];
+            for (let i = 0; i < num / 2; i++) {
+                const randomNum = Math.floor(Math.random() * num);
+                arr.push(randomNum);
+            }
+            return arr;
+        }
+        console.log();
+
+        // задание 7
+        function averageNumber(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        console.log(averageNumber(10, 20));
+
+        // задание 8
+        let currentDate_2 = new Date();
+        console.log(currentDate_2);
+
+        // задание 9
+
+        let currentDate = new Date();
+        currentDate.setDate(73);
+        console.log(currentDate);
+
+        // задание 10
+        const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+        const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+        let myDate = new Date();
+        let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() +
+            ", " + days[myDate.getDay()];
+        console.log(fullDate);
+
+        function formatTime(date) {
+            const { getHours, getMinutes, getSeconds } = Date;
+            const hours = getHours(date);
+            if (hours < 10) hours = '0' + hours;
+
+            const minutes = getMinutes(date);
+            if (minutes < 10) minutes = '0' + minutes;
+
+            const seconds = getSeconds(date);
+            if (seconds < 10) seconds = '0' + seconds;
+
+            return `${hours}:${minutes}:${seconds}`;
+        }
+
+        console.log(formatTime(new Date()));
+    </script>
+
+</body>
+
+</html>
