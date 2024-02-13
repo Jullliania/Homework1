@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let result;
+
+        // задание 1
+
+        function smallerNumber(a, b) {
+
+            return a < b ? a : b;
+        };
+
+        result = smallerNumber(3, 6);
+        console.log(result);
+
+        //задание 2
+
+        function is_even(number) {
+            if (number % 2 == 0)
+                return "Число четное";
+
+            else return ("Число нечетное");;
+        }
+        result = is_even(57);
+        console.log(result);
+
+        // задание 3 
+
+        function squareNumber(a) {
+            return a ** 2;
+        };
+        result = squareNumber(5);
+        console.log(result);
+
+        // задание 3.1 
+
+        function cubeNumber(b) {
+            return b ** 4;
+        };
+        result = cubeNumber(2);
+        console.log(result);
+
+        // задание 4
+
+        let age = String(prompt("Сколько вам лет?"));
+        if (age < 0) {
+            alert('Вы ввели неправильное значение');
+        } if (age < 12) {
+            alert('Привет, друг!')
+        } else {
+            alert('Добро пожаловать!')
+        }
+
+        // задание 5
+        function falseNumbers() {
+            let e = Number(prompt('Введите число'));
+            let c = Number(prompt('Введите число'));
+            if (typeof e != 'number' || typeof c != 'number') {
+                return 'Одно или оба значения не являются числом';
+            } else {
+                return c * e;
+            }
+        }
+        console.log(falseNumbers());
+
+        // задание 5 не поняда по условию надо запрашивать числа или нет, попробовала сделать 2 варианта
+
+        function falseNumbers1(x, y) {
+
+            if (typeof x != 'number' || typeof y != 'number') {
+                return 'Одно или оба значения не являются числом';
+            } else {
+                return x * y;
+            }
+        }
+        console.log(falseNumbers1(6, 9));
+
+        // задание 6
+        function sixthTask() {
+            let num = Number(prompt('Введите число'));
+
+            if (typeof num != 'number') {
+                return 'Параметр не является числом';
+            } else {
+                return num ** 3;
+            }
+        }
+        result = sixthTask();
+
+        console.log(`${8} в кубе равняется ${result}`); // не рахобраласбь как исправить "8"
+
+        // задание 7
+
+        const  circle1 = {
+            radius: 5,
+
+            getArea: function() {
+                return this.radius ** 2 * 3.14;
+            },
+
+
+            getPerimeter: function() {
+                return 2 * 3.14 * this.radius;
+            },
+           
+        }
+    
+        console.log(circle1.getArea());
+        console.log(circle1.getPerimeter());
+
+
+    </script>
+</body>
+
+</html>
