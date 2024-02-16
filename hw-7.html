@@ -18,14 +18,11 @@
         console.log(toUpperCase(input));
 
         // задание 2
-        const animal = (['Кошка', 'Кит', 'Комар', 'Носорог']);
-        const search = 'ко';
 
-        animal.forEach((animal) => {
-            if (animal.toLowerCase().startsWith(search.toLowerCase())) {
-                console.log(animal);
-            }
-        });
+        const searchStart = (words, prefix) => {
+            return words.filter(word => word.toLowerCase().includes(prefix.toLowerCase()))
+        }
+       console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
 
         // задание 3
         const num_1 = Math.floor(32.58884);
@@ -38,30 +35,24 @@
         console.log(num_3);
 
         // задание 4
+        let priceStock = [52, 53, 49, 77, 21, 32]
+        console.log(Math.min.apply(null, priceStock));
+        console.log(Math.max.apply(null, priceStock));
 
-        const numbers = [52, 53, 49, 77, 21, 32];
-
-        let min = numbers[0];
-        let max = numbers[0];
-
-        for (let i = 1; i < numbers.length; i++) {
-            if (numbers[i] < min) {
-                min = numbers[i];
-            }
-
-            if (numbers[i] > max) {
-                max = numbers[i];
-            }
-        }
-
-        console.log("Минимальное число: ", min);
-        console.log("Максимальное число: ", max);
 
         // задание 5 
-        function getRandomInt(minValue, maxValue) {
-            return Math.round(Math.random() * maxValue);
+
+
+        function getRandomNumber(min, max) {
+            return Math.random() * (max - min) + min
         }
-        console.log(getRandomInt(0, 10));
+        let x = 1;
+        let y = 10;
+        function anyNumber(minU, maxW) {
+            return Math.random() * (maxW - minU) + minU;
+        }
+        console.log(anyNumber(x, y))
+
 
         // задание 6
         function getRandomNumbers(num) {
@@ -96,26 +87,12 @@
         // задание 10
         const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
         const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+        var d = new Date();
+        var n = d.toLocaleTimeString();
         let myDate = new Date();
-        let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() +
-            ", " + days[myDate.getDay()];
-        console.log(fullDate);
+        let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " это" + " " + days[myDate.getDay()] + " текущее время " + d.toLocaleTimeString();
 
-        function formatTime(date) {
-            const { getHours, getMinutes, getSeconds } = Date;
-            const hours = getHours(date);
-            if (hours < 10) hours = '0' + hours;
-
-            const minutes = getMinutes(date);
-            if (minutes < 10) minutes = '0' + minutes;
-
-            const seconds = getSeconds(date);
-            if (seconds < 10) seconds = '0' + seconds;
-
-            return `${hours}:${minutes}:${seconds}`;
-        }
-
-        console.log(formatTime(new Date()));
+        console.log(fullDate)
     </script>
 
 </body>
