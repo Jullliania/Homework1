@@ -80,7 +80,6 @@
         font-size: 32px;
         padding-top: 51px;
         padding-bottom: none;
-
     }
 
     .text__seasons {
@@ -94,10 +93,6 @@
         line-height: 22px; /* 157.143% */
         color: #fff;
         font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 22px;
     }
 
     .seasons-top {
@@ -112,4 +107,15 @@
         padding-right: 16px;
     }
 
+    .remember-top {
+        padding-top: 2px;
+        padding-bottom: 64px;
+        order: 2;
+    }
+
+    .remember-top__1 {
+        padding-top: 2px;
+        padding-bottom: 64px;
+        order: 1;
+    }
 }
